@@ -9,7 +9,7 @@
     "clean": "node ./scripts/reset.js",
     "svgo": "svgo -f ./src/icons/ --config svgo.config.js",
     "sprite": "node ./scripts/svg-sprite.js --outDir dist --outFile codicon.svg",
-    "replace-in-dotcode": "cp -R ./dist/codicon.ttf ../dotcode/src/vs/base/browser/ui/codicons/codicon/codicon.ttf",
+    "replace-in-dotcode": "cp -R ./dist/codicon.ttf ../../src/vs/base/browser/ui/codicons/codicon/codicon.ttf",
     "export-to-csv": "node ./scripts/export-to-csv.js -f ./dist/codicon.ttf > ./dist/codicon.csv",
     "fonts": "fantasticon",
     "dev": "yarn clean && yarn svgo && yarn fonts && yarn export-to-csv && yarn sprite && yarn replace-in-dotcode",
